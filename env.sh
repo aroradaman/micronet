@@ -20,9 +20,9 @@ export vagrant_cidr="192.168.1.0/24"
 # ip of the vagrant machine
 ### needs to be updated, depends on system configuration
 #### should be ip of main_interface
-export host_1_ip="192.168.1.31"
+export host_1_ip="192.168.1.33"
 #### should be ip of main_interface
-export host_2_ip="192.168.1.32"
+export host_2_ip="192.168.1.34"
 
 # define bridge ips
 export host_1_ip_bridge="172.16.1.1"
