@@ -1,0 +1,10 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+Vagrant.configure("2") do |config|
+  config.vm.hostname = "host"
+  config.vm.box = "acntech/ubuntu-server" 
+  config.vm.box_version = "22.04"
+  config.vm.network "public_network", use_dhcp_assigned_default_route: true
+  config.vm.synced_folder ".", "/home/vagrant/naivenet", create: true
+end
